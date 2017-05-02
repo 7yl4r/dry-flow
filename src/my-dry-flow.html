@@ -4,6 +4,9 @@
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="shared-styles.html">
 
+<link rel="import" href="../bower_components/paper-tabs/paper-tabs.html">
+<link rel="import" href="../bower_components/paper-tabs/paper-tab.html">
+
 <dom-module id="my-dry-flow">
   <template>
     <style include="shared-styles">
@@ -15,7 +18,19 @@
     </style>
 
     <div class="card">
-        Test test test.
+        Component Descriptions
+        <paper-tabs selected="{{selected}}" scrollable>
+          <paper-tab>The first tab</paper-tab>
+          <paper-tab>Tab two</paper-tab>
+          <paper-tab>The third tab</paper-tab>
+          <paper-tab> (+) </paper-tab>
+        </paper-tabs>
+        <iron-pages selected="{{selected}}">
+              <div>CONTENT ONE</div>
+              <div>CONTENT TWO</div>
+              <div>CONTENT THREE</div>
+              <div>TODO: create new...</div>
+        </iron-pages>
     </div>
   </template>
 
