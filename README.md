@@ -30,9 +30,9 @@ We've recorded a Polycast to get you up and running with PSK2 fast!
 
 This command serves the app at `http://localhost:8080` and provides basic URL
 routing for the app:
-
+```
     polymer serve --open
-
+```
 ### Build
 
 This command performs HTML, CSS, and JS minification on the application
@@ -44,28 +44,28 @@ for serving from a HTTP/2+Push compatible server.
 In addition the command also creates a fallback `build/bundled` folder,
 generated using fragment bundling, suitable for serving from non
 H2/push-compatible servers or to clients that do not support H2/Push.
-
+```
     polymer build
-
+```
 ### Preview the build
 
 This command serves the minified version of the app at `http://localhost:8080`
 in an unbundled state, as it would be served by a push-compatible server:
-
+```
     polymer serve build/unbundled
-
+```
 This command serves the minified version of the app at `http://localhost:8080`
 generated using fragment bundling:
-
+```
     polymer serve build/bundled
-
+```
 ### Run tests
 
 This command will run [Web Component Tester](https://github.com/Polymer/web-component-tester)
 against the browsers currently installed on your machine:
-
+```
     polymer test
-
+```
 ### Adding a new view
 
 You can extend the app by adding more views that will be demand-loaded

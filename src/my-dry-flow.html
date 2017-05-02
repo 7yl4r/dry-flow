@@ -1,0 +1,29 @@
+<!--
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-dry-flow">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+    </style>
+
+    <div class="card">
+        Test test test.
+    </div>
+  </template>
+
+  <script>
+    class DryFlow extends Polymer.Element {
+      static get is() { return 'my-dry-flow'; }
+    }
+
+    window.customElements.define(DryFlow.is, DryFlow);
+  </script>
+</dom-module>
