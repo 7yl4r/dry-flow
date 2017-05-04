@@ -37,14 +37,24 @@
         id="document"
     -->
 
-    <!-- <app-pouchdb-sync
-        src="https://7yl4r.cloudant.com/dry-flow"
-        target="dry-flow"
+    <!-- TODO: add authentication & API key @
+        https://7yl4r.cloudant.com/dashboard.html#/database/dry-flow/permissions
+    -->
+    <app-pouchdb-sync
+        src="dry-flow"
+        target="https://7yl4r.cloudant.com/dry-flow"
         bidirectional>
     </app-pouchdb-sync>
-    -->
+
 
     <!-- ############ MAIN APP AREA ############ -->
+    <div class="card">
+        DataFlow Viewer
+        <div>
+            TODO
+        </div>
+    </div>
+
     <div class="card">
         Component Descriptions
         <paper-tabs selected="{{selected}}" scrollable>
@@ -59,12 +69,12 @@
 
                 <input type="text" value="{{test_obj.name::change}}">
 
-<!--
+                <!--
                 <input
                     is="iron-input"
                     bind-value="{{test_obj.name}}">
                 </input>
- -->
+                -->
                 name: {{test_obj.name}}
 
                 END
@@ -74,6 +84,14 @@
             <div>TODO: create new...</div>
         </iron-pages>
     </div>
+
+    <div class="card">
+        DataFlow Lint
+        <div>
+            TODO
+        </div>
+    </div>
+
   </template>
 
   <script>
